@@ -1,0 +1,31 @@
+{
+  "name": "quark-webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --port 8080 --no-open --server 'app' --watch 'app' --files 'app' ",
+    "sass": "node-sass --watch 'app/scss/barclays-regular.scss' --recursive  --output 'app/css/' --source-map true ",
+    "sassPrint": "node-sass --watch 'app/scss/print.scss' --output 'app/css/' --output-style expanded --source-map true ",
+    "babel": "babel src --watch --source-maps --out-file app/js/min/scripts-babel.js",
+    "boom": "concurrently 'npm run start' 'npm run sass' 'npm run babel' "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "eslintConfig": {},
+  "description": ""
+}

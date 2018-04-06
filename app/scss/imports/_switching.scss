@@ -1,0 +1,62 @@
+/* included to display switching functionality only */
+
+.switch-h1 {
+	color: #444;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.in-chapter .switch-h1 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	@media (min-width: $break-three){
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: $text;
+	}
+}
+.switch-h2 {
+	margin-top: 0.25rem;
+	font-size: 1.5rem;
+}
+.in-chapter .switch-h2 {
+	color: #222;
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding-bottom: 0.5rem;
+	letter-spacing: -1px;
+	line-height: 1.1;
+	@media (min-width: $break-three){
+		margin-top: 0.25rem;
+		font-size: 1.75rem;
+		color: $link;
+		font-weight: 400;
+	}
+}
+
+.switch-lede {
+    font-weight: 300;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    @media (min-width: $break-three){
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 1.5;
+    }
+}
+.sect svg {
+	display: none;
+	fill: #fff;
+	width: 0.875rem;
+	height: 0.875rem;
+}
+.sect.active svg {
+	display: inline-block;
+		width: 0.875rem;
+	height: 0.875rem;
+	margin: 0;
+	padding: 0;
+}
+
+
+
